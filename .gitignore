@@ -1,0 +1,9 @@
+.env
+*.env
+chroma_store/
+semantic_profile.json
+results/scores.csv
+results/benchmark_graph.png
+__pycache__/
+*.pyc
+.venv/
