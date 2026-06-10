@@ -14,11 +14,11 @@ combined in later ones.
 pip install -r requirements.txt
 ```
 
-Copy `.env.example` to `.env` and add your Anthropic API key:
+Copy `.env.example` to `.env` and add your OpenAI API key:
 
 ```bash
 cp .env.example .env
-# then edit .env and set ANTHROPIC_API_KEY=sk-...
+# then edit .env and set OPENAI_API_KEY=sk-...
 ```
 
 ---
@@ -26,7 +26,7 @@ cp .env.example .env
 ## Run
 
 ```bash
-# Step 1 — run the benchmark (takes ~10–15 minutes, 150 LLM calls)
+# Step 1 — run the benchmark (takes ~10–15 minutes, ~210 API calls)
 python run_benchmark.py
 
 # Step 2 — visualise the results
