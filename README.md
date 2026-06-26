@@ -1,3 +1,13 @@
+---
+title: MemoryOS Benchmark
+emoji: 🧠
+colorFrom: green
+colorTo: red
+sdk: docker
+app_file: app.py
+pinned: false
+---
+
 # MemoryOS Benchmark
 
 A controlled benchmark that proves an AI agent equipped with a three-layer memory system
