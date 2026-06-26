@@ -8,7 +8,7 @@ app_port: 7860
 tags:
 - streamlit
 pinned: false
-short_description: Benchmarking AI agents with vs without memory across 50 tasks
+short_description: AI agents with vs without memory, benchmarked
 ---
 
 # MemoryOS Benchmark
