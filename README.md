@@ -1,14 +1,14 @@
 ---
-title: Streamlit Template Space
+title: Memoryos Benchmark
 emoji: 🚀
 colorFrom: red
 colorTo: red
 sdk: docker
 app_port: 8501
 tags:
-  - streamlit
+- streamlit
 pinned: false
-short_description: Streamlit template space
+short_description: Benchmarking AI agents with vs without memory across 50 task
 ---
 
 # Welcome to Streamlit!
