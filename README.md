@@ -4,8 +4,11 @@ emoji: 🧠
 colorFrom: green
 colorTo: red
 sdk: docker
-app_file: app.py
+app_port: 7860
+tags:
+- streamlit
 pinned: false
+short_description: Benchmarking AI agents with vs without memory across 50 tasks
 ---
 
 # MemoryOS Benchmark
