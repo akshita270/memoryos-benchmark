@@ -6,13 +6,12 @@ from pathlib import Path
 
 import pandas as pd
 
-_CSV_PATH = Path("results/scores.csv")
+_CSV_PATH = Path(os.path.expanduser("~")) / "scores.csv"
 _HEADERS = ["task_id", "session_id", "agent", "score"]
 
 
 def save_score(task_id: int, session_id: int, agent_name: str, score: int) -> None:
     """Append one scored result row to the CSV file."""
-    _CSV_PATH.parent.mkdir(exist_ok=True)
     write_header = not _CSV_PATH.exists()
     with _CSV_PATH.open("a", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=_HEADERS)

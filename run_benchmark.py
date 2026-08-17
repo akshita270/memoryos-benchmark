@@ -1,5 +1,6 @@
 """Master benchmark script — runs all 50 tasks through both agents and records scores."""
 
+import os
 import time
 from pathlib import Path
 
@@ -14,7 +15,7 @@ from eval.metrics import save_score
 load_dotenv()
 
 # Clear previous results so each run starts fresh
-_CSV = Path("results/scores.csv")
+_CSV = Path(os.path.expanduser("~")) / "scores.csv"
 if _CSV.exists():
     _CSV.unlink()
 

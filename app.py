@@ -1,5 +1,6 @@
 """MemoryOS Benchmark — minimal centred Streamlit dashboard."""
 
+import os
 import time
 import threading
 from pathlib import Path
@@ -157,7 +158,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # ── Constants ─────────────────────────────────────────────────────────────────
-_CSV             = Path("results/scores.csv")
+_CSV             = Path(os.path.expanduser("~")) / "scores.csv"
 _TASKS_PER_SES   = 5
 _TOTAL_TASKS     = 50
 _ROLLING_WIN     = 5

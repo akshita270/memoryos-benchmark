@@ -4,9 +4,11 @@ import chromadb
 from chromadb.config import Settings
 from sentence_transformers import SentenceTransformer
 
+import os
+
 _EMBED_MODEL = "all-MiniLM-L6-v2"
 _COLLECTION_NAME = "episodic_memory"
-_PERSIST_DIR = "chroma_store"
+_PERSIST_DIR = os.path.join(os.path.expanduser("~"), ".chroma_store")
 
 
 class EpisodicMemory:

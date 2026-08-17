@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-_PROFILE_PATH = Path("semantic_profile.json")
+_PROFILE_PATH = Path(os.path.expanduser("~")) / "semantic_profile.json"
 _DEFAULT_PROFILE: dict = {
     "name": "",
     "job": "",
